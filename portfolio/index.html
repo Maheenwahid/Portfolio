@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f2fbf9">
+    <meta name="description" content="Maheen Wahid is a backend-focused MERN software engineer building secure APIs, maintainable workflows, and polished React products.">
+    <title>Maheen Wahid — Backend-focused MERN Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;450;500;550;600;650;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("maheen-theme");
+        document.documentElement.dataset.theme = savedTheme === "light" || savedTheme === "dark"
+          ? savedTheme
+          : window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      } catch (error) {
+        console.warn("Could not load the saved theme preference.", error);
+        document.documentElement.dataset.theme = "light";
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="navigation shell" aria-label="Main navigation">
+        <a class="wordmark" href="#top" aria-label="Maheen Wahid, home">
+          <span class="wordmark-mark" aria-hidden="true">MW</span>
+          <span class="wordmark-name">Maheen Wahid</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation menu">
+          <span></span><span></span>
+        </button>
+        <div class="nav-panel" id="primary-menu">
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="nav-actions">
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
+              <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+            </button>
+            <a class="nav-cta" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero shell" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow role-chip"><span class="status-dot" aria-hidden="true"></span> BACKEND-FOCUSED MERN ENGINEER</p>
+          <h1 id="hero-title">Hi, I’m <span>Maheen</span></h1>
+          <p class="hero-detail">My work spans health-tech, fintech, and cryptocurrency—from access-controlled workflows and payments to reporting, cloud services, and third-party integrations.</p>
+       
+       <p>
+        I'm a Full-Stack Developer with 2.5+ years of experience building scalable, responsive web applications and APIs. I enjoy turning ideas into practical digital solutions, from intuitive user interfaces to reliable backend systems and integrations.
+       </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View my work <span aria-hidden="true">↘</span></a>
+            <a class="button button-quiet" href="#contact">Let’s connect</a>
+          </div>
+          <div class="hero-socials" aria-label="Social links">
+            <a href="https://github.com/Maheenwahid" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/maheen-wahid-b599101ba" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="resume.pdf" download>Resume <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <aside class="hero-profile reveal" aria-label="Engineering profile">
+          <div class="profile-topline"><span class="profile-avatar" aria-hidden="true">MW</span><span>ENGINEERING PROFILE</span><span class="profile-indicator" aria-hidden="true"></span></div>
+          <p class="profile-name">Maheen Wahid</p>
+          <p class="profile-role">Software Engineer <span>·</span> Karachi, Pakistan</p>
+          <div class="profile-divider"></div>
+          <p class="profile-label">A SNAPSHOT OF MY WORK</p>
+          <pre class="profile-code" aria-label="Engineering profile highlights"><code><span class="code-muted">const</span> maheen = {
+  role: <span>"Full Stack Software Engineer (MERN)"</span>,
+  experience: <span>"2.5 years"</span>,
+  shipping: <span>true</span>,
+  focus: <span>"Designing, building, and deploying production-grade web systems end to end"</span>,
+  frontend: {
+    library: <span>"React.js"</span>,
+    sdkIntegration: [
+      <span>"Agora SDK (video meeting UI &amp; real-time session handling)"</span>,
+      <span>"Face Heart AI vital scan SDK (camera-based vitals capture)"</span>,
+    ],
+  },
+  backend: {
+    runtime: <span>"Node.js"</span>,
+    frameworks: [<span>"Fastify"</span>, <span>"Express"</span>],
+    apis: <span>"RESTful API design with authentication &amp; authorization"</span>,
+    integrations: [
+      <span>"Third-party APIs"</span>,
+      <span>"Payment gateways"</span>,
+      <span>"Firebase FCM push notifications"</span>,
+      <span>"Agora SDK (token generation, channel &amp; session management)"</span>,
+      <span>"Face Heart AI vital scan (result handling &amp; storage)"</span>,
+    ],
+    reporting: <span>"JasperReports"</span>,
+    automation: <span>"n8n workflows"</span>,
+  },
+  modulesShipped: [
+    <span>"Agora-based video meeting module: scheduling, token generation, and live sessions (backend + frontend)"</span>,
+    <span>"AI vital scan module: Face Heart AI SDK on the client, results processed and stored via backend APIs"</span>,
+    <span>"Timezone-safe meeting scheduling (store UTC, convert at the edges)"</span>,
+  ],
+  database: {
+    engine: <span>"MySQL"</span>,
+    orm: <span>"Sequelize"</span>,
+    practices: [<span>"Query &amp; index optimization"</span>, <span>"Schema design"</span>],
+  },
+  infrastructure: {
+    cloud: [<span>"AWS EC2"</span>, <span>"AWS S3"</span>],
+    processManagement: <span>"PM2"</span>,
+    containerization: <span>"Docker"</span>,
+    deployment: [<span>"Docker-based deployment"</span>, <span>"WinSCP / SSH file transfer"</span>],
+    networking: <span>"Reverse proxy &amp; load balancer request flow (Nginx, X-Forwarded-For)"</span>,
+  },
+  strengths: [
+    <span>"Third-party SDK integration, end to end (backend + frontend)"</span>,
+    <span>"Production bug fixing and root-cause debugging"</span>,
+    <span>"Taking features from local development to live deployment"</span>,
+  ],
+  futureLearning: <span>"Agentic AI"</span>,
+};</code></pre>
+          <div class="profile-foot">
+            <span><i aria-hidden="true"></i> Currently at</span>
+            <strong>Evantagesoft</strong>
+          </div>
+          <div class="profile-foot profile-foot-secondary">
+            <span>Building across</span>
+            <strong>APIs · Portals · Integrations</strong>
+          </div>
+        </aside>
+        <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+      </section>
+
+      <section class="stats shell reveal" aria-label="Selected career highlights">
+        <div class="stat"><strong>3.61<span>/4.0</span></strong><span>Software Engineering CGPA</span></div>
+        <div class="stat"><strong>5</strong><span>client platforms delivered</span></div>
+        <div class="stat"><strong>2024<span>—now</span></strong><span>Software Engineer</span></div>
+        <div class="stat stat-domain"><strong>3 <i>domains</i></strong><span>health-tech · fintech · crypto</span></div>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="shell about-layout">
+          <p class="eyebrow section-kicker reveal"><span>01</span> ABOUT</p>
+          <div class="about-card reveal">
+            <h2 id="about-title">Building solutions that<br><span class="text-accent">solve real problems.</span></h2>
+            <p class="about-copy">I’m a MERN Stack Developer and Software Engineer with a Software Engineering degree from UBIT, University of Karachi. At Evantagesoft, I build and deploy backend APIs and the React interfaces that connect people to them.</p>
+            <p class="about-copy">I’ve worked across health-tech, fintech, cryptocurrency, fundraising,FBR invoicing system and operational platforms. My experience covers role-based access,  payment integration, AWS S3 file services, scheduled automation, dynamic PDF reports, and integrations with external SDKs and APIs.</p>
+            <p class="about-copy">I’ve delivered platform work both with a team and independently, and supervised delivery on one project. I value ownership, clear communication, and maintainable software—and bring a practical, can-do approach when the domain or problem is new.</p>
+            <a class="text-link" href="#contact">A little more about working together <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section focus-section" aria-labelledby="focus-title">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div><p class="eyebrow section-kicker"><span>02</span> FOCUS</p><h2 id="focus-title">What I <span class="text-accent">build.</span></h2></div>
+            <p class="heading-aside">Backend-centered full-stack engineering—from product workflows to the interfaces around them.</p>
+          </div>
+          <div class="focus-grid">
+            <article class="focus-card reveal">
+              <span class="focus-index">01 <i>/</i> BACKEND &amp; APIs</span>
+              <span class="focus-icon" aria-hidden="true">{ }</span>
+              <h3>Dependable services</h3>
+              <p>Secure REST APIs, JWT verification, role-based access, database workflows, scheduled automation, and integrations.</p>
+            </article>
+            <article class="focus-card reveal">
+              <span class="focus-index">02 <i>/</i> PRODUCT DELIVERY</span>
+              <span class="focus-icon" aria-hidden="true">↗</span>
+              <h3>Features end to end</h3>
+              <p>React interfaces, admin portals, data listings, CRUD flows, dashboards, and connected full-stack features.</p>
+            </article>
+            <article class="focus-card reveal">
+              <span class="focus-index">03 <i>/</i> COMPLEX DOMAINS</span>
+              <span class="focus-icon" aria-hidden="true">◈</span>
+              <h3>Real operational flows</h3>
+              <p>Healthcare results and reports, recurring donations, cryptocurrency transactions, and traceable procurement workflows.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div><p class="eyebrow section-kicker"><span>03</span> FEATURED WORK</p><h2 id="projects-title">Projects I’ve shipped<br><span class="text-accent">end to end.</span></h2></div>
+            <p class="heading-aside">Selected client platforms and reusable services. Private project work is described without exposing source code or confidential details.</p>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-visual visual-procurement" aria-hidden="true">
+                <div class="mock-window">
+                  <div class="mock-bar"><span></span><span></span><span></span><small>BRANCH / INVENTORY</small></div>
+                  <div class="mock-content"><div class="mock-sidebar"><i></i><i></i><i></i><i></i></div><div class="mock-workspace"><div class="mock-title"><span>Asset movements</span><b>+ New request</b></div><div class="mock-stats"><i></i><i></i><i></i></div><div class="mock-table"><i></i><i></i><i></i><i></i></div><div class="mock-table short"><i></i><i></i><i></i><i></i></div><div class="mock-table"><i></i><i></i><i></i><i></i></div></div></div>
+                </div>
+                <span class="visual-caption">OPERATIONS / AUDITABLE WORKFLOWS</span>
+              </div>
+              <div class="project-copy">
+                <p class="project-kicker"><span>01</span> OPERATIONS PLATFORM</p>
+                <h3>Procurement &amp; Branch Affairs</h3>
+                <p>Branch inventory and procurement flows covering stock movements, gate passes, airport logistics, vendor purchases, and approval chains. Role-based permissions and audit trails make each movement traceable.</p>
+                <div class="tag-list"><span>Node.js</span><span>Fastify</span><span>MySQL</span><span>Sequelize</span><span>React</span><span>JWT / RBAC</span></div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-visual visual-health" aria-hidden="true">
+                <div class="health-panel"><div class="health-top"><span>KNOW<span class="health-dot">.</span>US</span><span>WELLNESS OVERVIEW</span></div><div class="health-greeting">Your health, in focus.</div><div class="health-chart"><div class="chart-label">VITALS SUMMARY <span>↗</span></div><svg viewBox="0 0 360 86" preserveAspectRatio="none"><path d="M0 66 C34 60 35 40 70 47 S112 64 140 35 S174 48 202 31 S238 38 263 18 S303 38 331 14 S348 13 360 8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M0 66 C34 60 35 40 70 47 S112 64 140 35 S174 48 202 31 S238 38 263 18 S303 38 331 14 S348 13 360 8 V86 H0Z" fill="currentColor" opacity=".08"/></svg><div class="chart-axis"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span></div></div><div class="health-result"><span><i></i> TEST RESULTS</span><b>Protected access <span>↗</span></b></div></div>
+                <span class="visual-caption">HEALTH-TECH / PATIENT PORTAL</span>
+              </div>
+              <div class="project-copy">
+                <p class="project-kicker"><span>02</span> HEALTH-TECH</p>
+                <h3>Know.us</h3>
+                <p>At-home diagnostics and wellness platform with role-permission access, storefront ordering and result processing. Work included JasperReports PDFs, QR generation, password-protected results, and Nuralogix DFX SDK integrations.</p>
+                <div class="tag-list"><span>Node.js</span><span>Next.js</span><span>JasperReports</span><span>Nuralogix DFX</span><span>SendGrid</span></div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-visual visual-fintech" aria-hidden="true">
+                <div class="ledger"><div class="ledger-top"><span>MEEZAN <i>digitalverse</i></span><span>TRANSACTION LEDGER</span></div><div class="ledger-heading">Treasury activity</div><div class="ledger-balance"><small>WALLET STATUS</small><b><i></i> Connected</b><span>Authenticated session</span></div><div class="ledger-row"><span><i>↗</i> Beneficiary transfer</span><b>Verified</b></div><div class="ledger-row"><span><i>↙</i> Treasury settlement</span><b>Processing</b></div><div class="ledger-row"><span><i>↗</i> Transaction review</span><b>Recorded</b></div></div>
+                <span class="visual-caption">FINTECH / CRYPTO TRANSACTIONS</span>
+              </div>
+              <div class="project-copy">
+                <p class="project-kicker"><span>03</span> FINTECH / CRYPTO</p>
+                <h3>Meezan DigitalVerse</h3>
+                <p>Admin and user panels to track cryptocurrency transactions, with beneficiary management, transaction history, system configuration, KYC, bank-portal authentication, treasury wallets, and dispute flows.</p>
+                <div class="tag-list"><span>Ethers.js</span><span>MetaMask</span><span>KYC</span><span>Authentication</span></div>
+              </div>
+            </article>
+          </div>
+          <div class="more-work reveal">
+            <p class="eyebrow">MORE SELECTED WORK</p>
+            <div class="more-work-list">
+              <article><span class="more-work-index">04</span><div><h3>BabyReveal</h3><p>Test ordering and results, OTP verification, barcode and camera capture, card payments, and an Agora meeting and feedback flow.</p></div><span class="more-work-stack">React · Agora · OTP</span></article>
+              <article><span class="more-work-index">05</span><div><h3>Donation4All</h3><p>Fundraising and recurring giving with donor reports, invoices, receipts, events, and admin, organizational, and sub-user roles.</p></div><span class="more-work-stack">MERN · MX Merchant</span></article>
+              <article><span class="more-work-index">06</span><div><h3>Antoxicate &amp; getTestd</h3><p>Related testing platforms sharing APIs, scheduled workers, report generation, result imaging, and patient email and push notifications.</p></div><span class="more-work-stack">Next.js · Node.js · AWS S3</span></article>
+              <article><span class="more-work-index">07</span><div><h3>JasperReports Services</h3><p>Reusable services rendering database-driven PDFs for result and transaction workflows across multiple platforms.</p></div><span class="more-work-stack">Node.js · MySQL · Jasper</span></article>
+              <article><span class="more-work-index">08</span><div><h3>Result Image &amp; Accession Services</h3><p>HTML-to-image rendering with cloud delivery, plus authenticated, scheduled lab accession-number assignment.</p></div><span class="more-work-stack">Puppeteer · Fastify · AWS S3</span></article>
+              <article><span class="more-work-index">09</span><div><h3>TMS Dashboard</h3><p>React admin dashboard for scheduling, data management, analytics visualization, and spreadsheet export.</p></div><span class="more-work-stack">Redux Toolkit · ECharts · ExcelJS</span></article>
+              <article><span class="more-work-index">10</span><div><h3>FBR Invoicing &amp; Posting System</h3><p>Contributed as part of a team to an FBR invoicing and posting system, working primarily on frontend tasks and occasionally supporting backend work.</p></div><span class="more-work-stack">Team contribution</span></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section education-section" id="education" aria-labelledby="education-title">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div><p class="eyebrow section-kicker"><span>04</span> LEARNING</p><h2 id="education-title">Education &amp;<br><span class="text-accent">recognition.</span></h2></div>
+            <p class="heading-aside">A Software Engineering degree and academic recognition from Karachi.</p>
+          </div>
+          <div class="education-grid">
+            <article class="education-card education-primary reveal">
+              <span class="education-status">BACHELOR’S DEGREE</span>
+              <h3>BS Software Engineering</h3>
+              <p>UBIT · University of Karachi</p>
+              <div class="education-result"><span>CGPA</span><strong>3.61 <i>/ 4.0</i></strong></div>
+              <span class="education-honor">Graduated in 3rd position</span>
+            </article>
+            <article class="education-card reveal"><span class="education-status">INTERMEDIATE</span><h3>Government Degree College, Malir Cantt</h3><p>Grade A+</p><div class="education-result"><span>RESULT</span><strong>80%</strong></div></article>
+            <article class="education-card reveal"><span class="education-status">MATRICULATION</span><h3>Little Master’s School System</h3><p>Grade A+</p><div class="education-result"><span>RESULT</span><strong>89%</strong></div></article>
+            <article class="education-card education-recognition reveal"><span class="education-status">RECOGNITION</span><h3>National Accountability Bureau</h3><p>Position holder in a speech competition and awarded a certificate for a poster competition.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div><p class="eyebrow section-kicker"><span>05</span> TOOLKIT</p><h2 id="skills-title">Skills, organized by<br><span class="text-accent">how I use them.</span></h2></div>
+            <p class="heading-aside">Technologies from my full-stack work, integrations, and day-to-day delivery.</p>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card reveal"><span class="skill-icon" aria-hidden="true">◫</span><h3>Frontend</h3><ul><li>React.js</li><li>Next.js</li><li>JavaScript (ES6+)</li><li>HTML5 / CSS3</li><li>Ant Design</li><li>Bootstrap</li><li>Responsive UI</li><li>Chart.js / ApexCharts</li></ul></article>
+            <article class="skill-card reveal"><span class="skill-icon" aria-hidden="true">{ }</span><h3>Backend</h3><ul><li>Node.js</li><li>Express.js</li><li>Fastify.js</li><li>REST APIs</li><li>JWT authentication</li><li>Role-based access control</li><li>Sequelize ORM</li><li>Cron jobs &amp; schedulers</li></ul></article>
+            <article class="skill-card reveal"><span class="skill-icon" aria-hidden="true">◈</span><h3>Data</h3><ul><li>MySQL</li><li>MongoDB</li><li>Data modeling</li><li>SQL-backed reporting</li><li>JasperReports</li></ul></article>
+            <article class="skill-card reveal"><span class="skill-icon" aria-hidden="true">↗</span><h3>Integrations</h3><ul><li>AWS S3</li><li>MX Merchant</li><li>Agora</li><li>Ethers.js / MetaMask</li><li>FaceHeart</li><li>Google Maps API</li><li>SendGrid / Klaviyo</li></ul></article>
+            <article class="skill-card reveal"><span class="skill-icon" aria-hidden="true">⌘</span><h3>Tooling &amp; delivery</h3><ul><li>Docker</li><li>CI/CD pipelines</li><li>Postman</li><li>Puppeteer</li><li>WinSCP</li><li>JasperStudio</li><li>Claude / Cursor</li></ul></article>
+            <article class="skill-card reveal"><span class="skill-icon" aria-hidden="true">◎</span><h3>How I work</h3><ul><li>Ownership &amp; accountability</li><li>Teamwork &amp; communication</li><li>Problem solving</li><li>Adaptability</li><li>Leadership</li><li>Can-do attitude</li><li>Time management</li></ul></article>
+          </div>
+          <p class="skills-footnote reveal">Skills are listed by area; no arbitrary proficiency scores.</p>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div><p class="eyebrow section-kicker"><span>06</span> EXPERIENCE</p><h2 id="experience-title">Where I’ve been<br><span class="text-accent">shipping.</span></h2></div>
+            <p class="heading-aside">Product engineering across team delivery, independent projects, and remote frontend work.</p>
+          </div>
+          <div class="experience-list">
+            <article class="experience-card reveal">
+              <div class="experience-period"><span>2024 — PRESENT</span><span>KARACHI, PAKISTAN</span></div>
+              <div class="experience-content">
+                <h3>Software Engineer</h3>
+                <p class="experience-company">Evantagesoft (Pvt) Limited <span>·</span> MERN Stack</p>
+                <ul>
+                  <li>Designed and deployed scalable APIs, securing routes with authorization headers, token verification, and role-based middleware.</li>
+                  <li>Integrated MX Merchant recurring billing and built secure AWS S3 file upload and download services.</li>
+                  <li>Generated dynamic JasperReports PDFs from MySQL and implemented cron-based scheduled processing.</li>
+                  <li>Built React listings, CRUD workflows, dashboards, and admin portals; integrated FaceHeart and Agora SDKs.</li>
+                  <li>Contributed to the Meezan cryptocurrency project with Ethers.js and handled deployments using WinSCP.</li>
+                </ul>
+                <p class="experience-highlight">Delivered across five client platforms: three with a team and two independently. Supervised delivery on one project.</p>
+              </div>
+            </article>
+            <article class="experience-card reveal">
+              <div class="experience-period"><span>4 MONTHS</span><span>REMOTE</span></div>
+              <div class="experience-content">
+                <h3>Frontend Developer Intern</h3>
+                <p class="experience-company">MangoTech Solutions</p>
+                <ul><li>Built and maintained responsive React interfaces as part of a remote frontend team.</li><li>Worked with reusable components and API-driven views, building a foundation later applied to full-stack delivery.</li></ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-inner shell reveal">
+          <div class="contact-copy">
+            <p class="eyebrow section-kicker"><span>07</span> LET’S BUILD</p>
+            <h2 id="contact-title">Have an idea worth<br><span class="text-accent">shipping? Let’s talk.</span></h2>
+            <p>Open to conversations about full-stack engineering roles, software projects, and technical collaborations.</p>
+            <a class="button button-primary contact-button" href="mailto:maheen.1wahid@gmail.com">Email me <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="contact-details">
+            <span class="contact-label">EMAIL</span>
+            <a class="contact-email" href="mailto:maheen.1wahid@gmail.com">maheen.1wahid@gmail.com <span aria-hidden="true">↗</span></a>
+            <div class="contact-line"></div>
+            <span class="contact-label">ELSEWHERE</span>
+            <a href="https://www.linkedin.com/in/maheen-wahid-b599101ba" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/Maheenwahid" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a class="contact-resume" href="resume.pdf" download>Download resume <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <a class="footer-wordmark" href="#top"><span>MW</span> MAHEEN WAHID</a>
+        <span>Built with care. © <span id="current-year">2026</span></span>
+        <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+  </body>
+</html>

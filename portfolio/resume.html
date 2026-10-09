@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Maheen Wahid — Resume</title>
+    <style>
+      :root { color: #202720; font-family: Arial, Helvetica, sans-serif; font-size: 10pt; line-height: 1.45; }
+      * { box-sizing: border-box; }
+      body { max-width: 850px; margin: 30px auto; padding: 45px 55px; background: white; }
+      h1, h2, h3, p { margin: 0; }
+      h1 { color: #17251b; font-size: 28pt; letter-spacing: -.04em; }
+      h2 { margin: 22px 0 8px; padding-bottom: 5px; border-bottom: 1px solid #95b77e; color: #31533a; font-size: 12pt; letter-spacing: .07em; text-transform: uppercase; }
+      h3 { font-size: 10pt; }
+      a { color: #31533a; text-decoration: none; }
+      .role { margin-top: 3px; color: #526452; font-size: 12pt; }
+      .contact { display: flex; flex-wrap: wrap; gap: 4px 17px; margin-top: 10px; color: #4c574d; font-size: 9pt; }
+      .summary { margin-top: 15px; color: #39423a; }
+      .skills { display: grid; grid-template-columns: 120px 1fr; gap: 6px 10px; }
+      .skills strong { color: #25372a; }
+      .entry { margin: 11px 0 0; }
+      .entry-head { display: flex; justify-content: space-between; gap: 15px; }
+      .entry-meta { color: #5c675d; font-size: 9pt; }
+      ul { margin: 4px 0 0; padding-left: 17px; }
+      li { margin: 2px 0; }
+      .project-list { display: grid; grid-template-columns: 1fr 1fr; column-gap: 22px; }
+      .project { margin: 8px 0 0; }
+      .project p, .entry p { margin-top: 3px; color: #3d463e; font-size: 9pt; }
+      .education { display: grid; grid-template-columns: 1fr auto; gap: 5px 16px; }
+      .education span { color: #526452; text-align: right; }
+      .recognition { margin-top: 8px; color: #3d463e; }
+      .print-action { position: fixed; top: 18px; right: 18px; padding: 10px 16px; border: 0; background: #294632; color: #fff; font: inherit; cursor: pointer; }
+      @media (max-width: 620px) { body { margin: 0; padding: 28px 22px; }.project-list { grid-template-columns: 1fr; }.skills { grid-template-columns: 1fr; gap: 1px; }.skills strong:not(:first-child) { margin-top: 7px; } }
+      @media print {
+        @page { size: A4; margin: 15mm 16mm; }
+        body { max-width: none; margin: 0; padding: 0; font-size: 9pt; }
+        h2 { break-after: avoid; }
+        .entry, .project { break-inside: avoid; }
+        .print-action { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <button class="print-action" type="button" onclick="window.print()">Print / Save as PDF</button>
+    <header>
+      <h1>Maheen Wahid</h1>
+      <p class="role">MERN Stack Developer · Software Engineer</p>
+      <div class="contact">
+        <a href="mailto:maheen.1wahid@gmail.com">maheen.1wahid@gmail.com</a>
+        <a href="https://www.linkedin.com/in/maheen-wahid-b599101ba">LinkedIn</a>
+        <a href="https://github.com/Maheenwahid">GitHub</a>
+        <span>Karachi, Pakistan</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p class="summary">MERN stack developer who designs and deploys scalable backend APIs and the React interfaces that sit on top of them. Experience across health-tech, fintech, and cryptocurrency, including role-based authentication, AWS S3 file services, recurring billing, dynamic PDF reporting, third-party SDK and AI integrations, cron-based automation, and blockchain integration with Ethers.js. Has supervised project delivery, works well in a team, and brings a consistent can-do approach to unfamiliar domains.</p>
+    </section>
+
+    <section>
+      <h2>Technical skills</h2>
+      <div class="skills">
+        <strong>Frontend</strong><span>HTML5, CSS3, JavaScript (ES6+), React.js, Next.js, Ant Design, Bootstrap, responsive UI, Chart.js, ApexCharts</span>
+        <strong>Backend</strong><span>Node.js, Express.js, Fastify, REST APIs, JWT authentication, role-based access control, Sequelize ORM, cron jobs, workflow management</span>
+        <strong>Databases</strong><span>MySQL, MongoDB</span>
+        <strong>Integrations</strong><span>JasperReports, Agora, Ethers.js, FaceHeart, MX Merchant, Klaviyo, SendGrid, AWS S3, Google Maps API</span>
+        <strong>Tools & delivery</strong><span>Puppeteer, WinSCP, Docker, CI/CD pipelines, AWS services, Postman, JasperStudio, Claude, Cursor</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <article class="entry">
+        <div class="entry-head"><h3>Software Engineer · Evantagesoft (Pvt) Limited</h3><span class="entry-meta">2024–Present</span></div>
+        <p class="entry-meta">Karachi, Pakistan · MERN Stack (Frontend + Backend)</p>
+        <ul>
+          <li>Designed and deployed scalable backend APIs with authentication, role-based access, token verification, and middleware-level authorization.</li>
+          <li>Integrated MX Merchant recurring billing and built secure AWS S3 file upload and download APIs.</li>
+          <li>Integrated JasperReports with Node.js for dynamic PDFs, designing reports in JasperStudio with MySQL as the data source.</li>
+          <li>Implemented cron-based scheduled processing and built React listings, CRUD workflows, dashboards, and admin portals.</li>
+          <li>Integrated FaceHeart and Agora SDKs; contributed to a cryptocurrency platform using Ethers.js.</li>
+          <li>Delivered across multiple client platforms—three with a team and two independently—and supervised delivery on one project.</li>
+        </ul>
+      </article>
+      <article class="entry">
+        <div class="entry-head"><h3>Frontend Developer Intern · MangoTech Solutions</h3><span class="entry-meta">4 months</span></div>
+        <p class="entry-meta">Remote</p>
+        <ul><li>Built and maintained responsive React interfaces as part of a remote frontend team, working with reusable components and API-driven views.</li></ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Selected projects</h2>
+      <div class="project-list">
+        <article class="project"><h3>Donation4All</h3><p>Fundraising platform for constituent data, recurring giving, invoices, receipts, events, role-based users, and multilingual donor reporting.</p></article>
+        <article class="project"><h3>Know.us</h3><p>At-home diagnostics and wellness platform; worked on access control, result processing, protected PDF reports, QR logic, and SDK integrations.</p></article>
+        <article class="project"><h3>BabyReveal</h3><p>Customer and admin portals for test orders and results, OTP, camera capture, payments, scheduled Agora meetings, and feedback.</p></article>
+        <article class="project"><h3>Antoxicate & getTestd</h3><p>Related health-testing platforms sharing APIs, admin portals, scheduled jobs, reports, result imaging, and patient notifications.</p></article>
+        <article class="project"><h3>Meezan DigitalVerse</h3><p>Admin and user panels for cryptocurrency transactions, beneficiary management, authentication, KYC, and treasury workflows.</p></article>
+        <article class="project"><h3>Procurement & Branch Affairs</h3><p>Inventory and procurement workflows with role-based permissions, approvals, gate passes, and auditable asset movements.</p></article>
+        <article class="project"><h3>JasperReports Services</h3><p>Reusable Node.js services rendering dynamic result and transaction PDFs from database queries for multiple platforms.</p></article>
+        <article class="project"><h3>Result Image & Accession Services</h3><p>HTML-to-image rendering and cloud delivery; scheduled, authenticated accession-number assignment for laboratory workflows.</p></article>
+        <article class="project"><h3>TMS</h3><p>React admin dashboard for scheduling, data management, analytics visualization, and spreadsheet export.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education & recognition</h2>
+      <div class="education">
+        <strong>BS Software Engineering · UBIT, University of Karachi</strong><span>CGPA 3.61 / 4.0 · 3rd position</span>
+        <strong>Intermediate · Government Degree College, Malir Cantt</strong><span>Grade A+ · 80%</span>
+        <strong>Matriculation · Little Master's School System</strong><span>Grade A+ · 89%</span>
+      </div>
+      <p class="recognition">Position holder in a speech competition and awarded a certificate for a poster competition organized by the National Accountability Bureau (NAB).</p>
+    </section>
+  </body>
+</html>
